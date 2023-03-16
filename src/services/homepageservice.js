@@ -13,3 +13,7 @@ export const getPost = (id) => {
 export const getTags = () => {
     return axios.get(`http://127.0.0.1:5000/posts/tags`);
 }
+
+export const postPost = (obj) => {
+    return axios.post(`http://127.0.0.1:5000/posts/`, obj).catch((reason) => { return reason; })
+}
