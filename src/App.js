@@ -8,7 +8,6 @@ import { useLocation } from "react-router-dom";
 
 function useQuery() {
   const { search } = useLocation();
-  console.log('search', search)
   return useMemo(() => new URLSearchParams(search), [search]);
 }
 
@@ -17,10 +16,9 @@ export default function Connects() {
   const [listData, setListData] = useState();
   let query = useQuery();
   let tag = query.get('tag');
-  console.log("tag app.js", tag)
   useEffect(() => {
     getPosts(tag).then((res) => { setListData(res.data); });
-    getTags().then((res) => { setServiceData(res.data); console.log(res.data); });
+    getTags().then((res) => { setServiceData(res.data); });
   }, [tag]);
 
   return (

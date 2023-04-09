@@ -2,7 +2,7 @@ import { Navbar, Container } from "react-bootstrap";
 function Footer() {
     return (
         <>
-            <hr class="my-4" />
+            <hr className="my-4" />
             <Navbar>
                 <Container>
                     <Navbar.Brand href="https://github.com/barjb">github</Navbar.Brand>

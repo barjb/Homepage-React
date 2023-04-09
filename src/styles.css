@@ -30,17 +30,15 @@ body {
 .editor {
     left: 0;
     width: 50%;
-    top: 0;
     overflow: auto;
     position: fixed;
 }
 
 .result {
     left: 50%;
-    height: 100%;
+    height: 85%;
     padding: calc(1em + 1ex);
     right: 0;
-    top: 0;
     overflow: auto;
     position: fixed;
 }
